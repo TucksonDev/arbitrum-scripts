@@ -1,0 +1,20 @@
+{
+    "name": "arbitrum-scripts",
+    "version": "1.0.0",
+    "description": "Command line utils for Arbitrum",
+    "scripts": {
+        "build": "npx tsc"
+    },
+    "keywords": [],
+    "author": "Tuckson",
+    "license": "ISC",
+    "dependencies": {
+        "@arbitrum/sdk": "^3.0.0",
+        "@types/yargs": "^17.0.19",
+        "dotenv": "^16.0.3",
+        "ethers": "^5.7.2",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.4",
+        "yargs": "^17.6.2"
+    }
+}
