@@ -1,7 +1,3 @@
-//
-// TODO: Support searching from L1
-//  
-
 import { utils, providers, BigNumber } from "ethers";
 import { ArbGasInfo__factory } from "@arbitrum/sdk/dist/lib/abi/factories/ArbGasInfo__factory";
 import { ARB_GAS_INFO } from "@arbitrum/sdk/dist/lib/dataEntities/constants";
