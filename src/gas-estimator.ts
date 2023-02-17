@@ -60,7 +60,7 @@ const gasEstimator = async () => {
     const P = gasComponents[5];
     const L2G = BigNumber.from(l2GasUsed);
     const L1P = gasComponents[1];
-    const L1S = dataLength;    // Reference https://etherscan.io/address/0x5aed5f8a1e3607476f1f81c3d8fe126deb0afe94#code => calculateRetryableSubmissionFee
+    const L1S = dataLength;
 
     // Getting the result of the formula
     // ---------------------------------
