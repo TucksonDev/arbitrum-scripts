@@ -1,4 +1,4 @@
-import { utils, providers, constants, BigNumber } from "ethers";
+import { utils, providers } from "ethers";
 import { ArbGasInfo__factory } from "@arbitrum/sdk/dist/lib/abi/factories/ArbGasInfo__factory";
 import { NodeInterface__factory } from "@arbitrum/sdk/dist/lib/abi/factories/NodeInterface__factory";
 import { ARB_GAS_INFO, NODE_INTERFACE_ADDRESS } from "@arbitrum/sdk/dist/lib/dataEntities/constants";
@@ -11,7 +11,7 @@ const baseL2Provider = new providers.StaticJsonRpcProvider(process.env.L2RPC);
 const GENERIC_NON_ZERO_ADDRESS = "0x1234563d5de0d7198451f87bcbf15aefd00d434d";
 
 // Transaction dependent variables (modify this values)
-const txData = "0x";
+const txData = "0x4e6974726f20676f65732076726f6f6d20616e642066697865732065766572797468696e67";
 
 const gasEstimator = async () => {
     // ***************************
