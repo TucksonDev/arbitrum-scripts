@@ -25,8 +25,7 @@ const recoverFundsOnAliasedL2Account = async () => {
     const aliasedSignerAddress = signerAddress.applyAlias();
 
     // And get its balance to find out the amount we are transferring
-    // const aliasedSignerBalance = await baseL2Provider.getBalance(aliasedSignerAddress.value);
-    const aliasedSignerBalance = utils.parseEther("0.005");
+    const aliasedSignerBalance = await baseL2Provider.getBalance(aliasedSignerAddress.value);
     if (aliasedSignerBalance.lte(0)) {
         console.warn("Address " + signerAddress.value + "(Alias: " + aliasedSignerAddress.value + ") does not have funds on L2");
         return;
