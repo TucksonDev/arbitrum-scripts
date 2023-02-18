@@ -52,7 +52,7 @@ const gasEstimator = async () => {
     //      NodeInterface.GasEstimateComponents() and get the second element => result[1]
     //
 
-    // Instantiation the ArbGasInfo and NodeInterface objects
+    // Instantiation of the ArbGasInfo and NodeInterface objects
     const arbGasInfo = ArbGasInfo__factory.connect(
         ARB_GAS_INFO,
         baseL2Provider
