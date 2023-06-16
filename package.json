@@ -3,7 +3,9 @@
     "version": "1.0.0",
     "description": "Command line utils for Arbitrum",
     "scripts": {
-        "build": "npx tsc"
+        "build": "npx tsc",
+        "lint": "eslint .",
+        "format": "prettier 'src/**/*.{js,json,md,ts,yml}' '!./src/lib/abi' --write && eslint --fix"
     },
     "keywords": [],
     "author": "Tuckson",
@@ -16,5 +18,13 @@
         "ts-node": "^10.9.1",
         "typescript": "^4.9.4",
         "yargs": "^17.6.2"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.59.11",
+        "@typescript-eslint/parser": "^5.59.11",
+        "eslint": "^8.42.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.8.8"
     }
 }
