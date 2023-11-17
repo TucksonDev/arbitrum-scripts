@@ -141,7 +141,7 @@ const main = async (l2BlockNumberToVerify: number) => {
 // Getting the transaction hash from the command arguments
 if (process.argv.length < 3) {
   console.log(`Missing L2 block number to verify whether it has been processed in the assertion of an RBlock/node`);
-  console.log(`Usage: npx ts-node src/check-l2-block-state-modification <L2 block number>`);
+  console.log(`Usage: npx ts-node src/check-l2-block-state-modification.ts <L2 block number>`);
   process.exit();
 }
 
